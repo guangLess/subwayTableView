@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62980A691D037C72009DD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A681D037C72009DD16B /* AppDelegate.swift */; };
+		62980A6E1D037C72009DD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62980A6C1D037C72009DD16B /* Main.storyboard */; };
+		62980A701D037C72009DD16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62980A6F1D037C72009DD16B /* Assets.xcassets */; };
+		62980A731D037C72009DD16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62980A711D037C72009DD16B /* LaunchScreen.storyboard */; };
+		62980A7E1D037C73009DD16B /* SubwayList_YHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A7D1D037C73009DD16B /* SubwayList_YHTests.swift */; };
+		62980A891D037C73009DD16B /* SubwayList_YHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A881D037C73009DD16B /* SubwayList_YHUITests.swift */; };
+		62980A971D037CD6009DD16B /* SubwayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A961D037CD6009DD16B /* SubwayData.swift */; };
+		62980A991D037E05009DD16B /* SubwayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A981D037E05009DD16B /* SubwayViewController.swift */; };
+		62980A9B1D037F3E009DD16B /* subway-lister.json in Resources */ = {isa = PBXBuildFile; fileRef = 62980A9A1D037F3E009DD16B /* subway-lister.json */; };
+		62980A9D1D038B0D009DD16B /* SubwayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A9C1D038B0D009DD16B /* SubwayLine.swift */; };
+		62980A9F1D039841009DD16B /* LineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62980A9E1D039841009DD16B /* LineTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62980A7A1D037C73009DD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62980A5D1D037C72009DD16B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62980A641D037C72009DD16B;
+			remoteInfo = "SubwayList-YH";
+		};
+		62980A851D037C73009DD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62980A5D1D037C72009DD16B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62980A641D037C72009DD16B;
+			remoteInfo = "SubwayList-YH";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62980A651D037C72009DD16B /* SubwayList-YH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SubwayList-YH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62980A681D037C72009DD16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "SubwayList-YH/AppDelegate.swift"; sourceTree = "<group>"; };
+		62980A6D1D037C72009DD16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62980A6F1D037C72009DD16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62980A721D037C72009DD16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62980A741D037C72009DD16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SubwayList-YH/Info.plist"; sourceTree = "<group>"; };
+		62980A791D037C73009DD16B /* SubwayList-YHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SubwayList-YHTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62980A7D1D037C73009DD16B /* SubwayList_YHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayList_YHTests.swift; sourceTree = "<group>"; };
+		62980A7F1D037C73009DD16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62980A841D037C73009DD16B /* SubwayList-YHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SubwayList-YHUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62980A881D037C73009DD16B /* SubwayList_YHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayList_YHUITests.swift; sourceTree = "<group>"; };
+		62980A8A1D037C73009DD16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62980A961D037CD6009DD16B /* SubwayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayData.swift; sourceTree = "<group>"; };
+		62980A981D037E05009DD16B /* SubwayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayViewController.swift; sourceTree = "<group>"; };
+		62980A9A1D037F3E009DD16B /* subway-lister.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "subway-lister.json"; sourceTree = "<group>"; };
+		62980A9C1D038B0D009DD16B /* SubwayLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayLine.swift; sourceTree = "<group>"; };
+		62980A9E1D039841009DD16B /* LineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62980A621D037C72009DD16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A761D037C73009DD16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A811D037C73009DD16B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62980A5C1D037C72009DD16B = {
+			isa = PBXGroup;
+			children = (
+				62980A9A1D037F3E009DD16B /* subway-lister.json */,
+				62980A6C1D037C72009DD16B /* Main.storyboard */,
+				62980A961D037CD6009DD16B /* SubwayData.swift */,
+				62980A9C1D038B0D009DD16B /* SubwayLine.swift */,
+				62980A981D037E05009DD16B /* SubwayViewController.swift */,
+				62980A9E1D039841009DD16B /* LineTableViewCell.swift */,
+				62980A671D037C72009DD16B /* SubwayList-YH */,
+				62980A7C1D037C73009DD16B /* SubwayList-YHTests */,
+				62980A871D037C73009DD16B /* SubwayList-YHUITests */,
+				62980A661D037C72009DD16B /* Products */,
+				62980A741D037C72009DD16B /* Info.plist */,
+				62980A711D037C72009DD16B /* LaunchScreen.storyboard */,
+				62980A681D037C72009DD16B /* AppDelegate.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		62980A661D037C72009DD16B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62980A651D037C72009DD16B /* SubwayList-YH.app */,
+				62980A791D037C73009DD16B /* SubwayList-YHTests.xctest */,
+				62980A841D037C73009DD16B /* SubwayList-YHUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62980A671D037C72009DD16B /* SubwayList-YH */ = {
+			isa = PBXGroup;
+			children = (
+				62980A6F1D037C72009DD16B /* Assets.xcassets */,
+			);
+			path = "SubwayList-YH";
+			sourceTree = "<group>";
+		};
+		62980A7C1D037C73009DD16B /* SubwayList-YHTests */ = {
+			isa = PBXGroup;
+			children = (
+				62980A7D1D037C73009DD16B /* SubwayList_YHTests.swift */,
+				62980A7F1D037C73009DD16B /* Info.plist */,
+			);
+			path = "SubwayList-YHTests";
+			sourceTree = "<group>";
+		};
+		62980A871D037C73009DD16B /* SubwayList-YHUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62980A881D037C73009DD16B /* SubwayList_YHUITests.swift */,
+				62980A8A1D037C73009DD16B /* Info.plist */,
+			);
+			path = "SubwayList-YHUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62980A641D037C72009DD16B /* SubwayList-YH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62980A8D1D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YH" */;
+			buildPhases = (
+				62980A611D037C72009DD16B /* Sources */,
+				62980A621D037C72009DD16B /* Frameworks */,
+				62980A631D037C72009DD16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SubwayList-YH";
+			productName = "SubwayList-YH";
+			productReference = 62980A651D037C72009DD16B /* SubwayList-YH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62980A781D037C73009DD16B /* SubwayList-YHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62980A901D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YHTests" */;
+			buildPhases = (
+				62980A751D037C73009DD16B /* Sources */,
+				62980A761D037C73009DD16B /* Frameworks */,
+				62980A771D037C73009DD16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62980A7B1D037C73009DD16B /* PBXTargetDependency */,
+			);
+			name = "SubwayList-YHTests";
+			productName = "SubwayList-YHTests";
+			productReference = 62980A791D037C73009DD16B /* SubwayList-YHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62980A831D037C73009DD16B /* SubwayList-YHUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62980A931D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YHUITests" */;
+			buildPhases = (
+				62980A801D037C73009DD16B /* Sources */,
+				62980A811D037C73009DD16B /* Frameworks */,
+				62980A821D037C73009DD16B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62980A861D037C73009DD16B /* PBXTargetDependency */,
+			);
+			name = "SubwayList-YHUITests";
+			productName = "SubwayList-YHUITests";
+			productReference = 62980A841D037C73009DD16B /* SubwayList-YHUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62980A5D1D037C72009DD16B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Guang;
+				TargetAttributes = {
+					62980A641D037C72009DD16B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					62980A781D037C73009DD16B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 62980A641D037C72009DD16B;
+					};
+					62980A831D037C73009DD16B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 62980A641D037C72009DD16B;
+					};
+				};
+			};
+			buildConfigurationList = 62980A601D037C72009DD16B /* Build configuration list for PBXProject "SubwayList-YH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62980A5C1D037C72009DD16B;
+			productRefGroup = 62980A661D037C72009DD16B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62980A641D037C72009DD16B /* SubwayList-YH */,
+				62980A781D037C73009DD16B /* SubwayList-YHTests */,
+				62980A831D037C73009DD16B /* SubwayList-YHUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62980A631D037C72009DD16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62980A731D037C72009DD16B /* LaunchScreen.storyboard in Resources */,
+				62980A9B1D037F3E009DD16B /* subway-lister.json in Resources */,
+				62980A701D037C72009DD16B /* Assets.xcassets in Resources */,
+				62980A6E1D037C72009DD16B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A771D037C73009DD16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A821D037C73009DD16B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62980A611D037C72009DD16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62980A9F1D039841009DD16B /* LineTableViewCell.swift in Sources */,
+				62980A971D037CD6009DD16B /* SubwayData.swift in Sources */,
+				62980A991D037E05009DD16B /* SubwayViewController.swift in Sources */,
+				62980A9D1D038B0D009DD16B /* SubwayLine.swift in Sources */,
+				62980A691D037C72009DD16B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A751D037C73009DD16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62980A7E1D037C73009DD16B /* SubwayList_YHTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62980A801D037C73009DD16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62980A891D037C73009DD16B /* SubwayList_YHUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62980A7B1D037C73009DD16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62980A641D037C72009DD16B /* SubwayList-YH */;
+			targetProxy = 62980A7A1D037C73009DD16B /* PBXContainerItemProxy */;
+		};
+		62980A861D037C73009DD16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62980A641D037C72009DD16B /* SubwayList-YH */;
+			targetProxy = 62980A851D037C73009DD16B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62980A6C1D037C72009DD16B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62980A6D1D037C72009DD16B /* Base */,
+			);
+			name = Main.storyboard;
+			path = "SubwayList-YH";
+			sourceTree = "<group>";
+		};
+		62980A711D037C72009DD16B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62980A721D037C72009DD16B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = "SubwayList-YH";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62980A8B1D037C73009DD16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62980A8C1D037C73009DD16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62980A8E1D037C73009DD16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SubwayList-YH/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62980A8F1D037C73009DD16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SubwayList-YH/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62980A911D037C73009DD16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SubwayList-YHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YHTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubwayList-YH.app/SubwayList-YH";
+			};
+			name = Debug;
+		};
+		62980A921D037C73009DD16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SubwayList-YHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YHTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubwayList-YH.app/SubwayList-YH";
+			};
+			name = Release;
+		};
+		62980A941D037C73009DD16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SubwayList-YHUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YHUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SubwayList-YH";
+			};
+			name = Debug;
+		};
+		62980A951D037C73009DD16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SubwayList-YHUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "waterBB.optional.SubwayList-YHUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SubwayList-YH";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62980A601D037C72009DD16B /* Build configuration list for PBXProject "SubwayList-YH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62980A8B1D037C73009DD16B /* Debug */,
+				62980A8C1D037C73009DD16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62980A8D1D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62980A8E1D037C73009DD16B /* Debug */,
+				62980A8F1D037C73009DD16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62980A901D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62980A911D037C73009DD16B /* Debug */,
+				62980A921D037C73009DD16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62980A931D037C73009DD16B /* Build configuration list for PBXNativeTarget "SubwayList-YHUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62980A941D037C73009DD16B /* Debug */,
+				62980A951D037C73009DD16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62980A5D1D037C72009DD16B /* Project object */;
+}

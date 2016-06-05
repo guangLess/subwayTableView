@@ -1,4 +1,4 @@
-Hi, Dave and Hannah
+Hi, Dave, Hannah and Natasha
 
 Here is my project. I finished the skeleton within 3 hours, and I spent a bit more time on the UI layout after. 
 

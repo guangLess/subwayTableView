@@ -15,14 +15,13 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
     @IBOutlet weak var subwayTableView: UITableView!
     
     
-    let subwayDataStore: SubwayData = SubwayData.sharedInstance
+    private let subwayDataStore: SubwayData = SubwayData.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //setupData()
         
-       
         let testLine = subwayDataStore.populateArrayWithSubLines().first
         print(testLine)
     
@@ -36,7 +35,6 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -56,41 +54,13 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
         //FIXME: pod to convert hex color
         cell.iconLabel.layer.backgroundColor = UIColor.blueColor().CGColor
         cell.nameLabel.text = eachLine.name
+        cell.nameLabel.sizeToFit()
         cell.descLabel.text = eachLine.desc
+        cell.descLabel.sizeToFit()
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("cell selected")
     }
-    
-
-//    func setupData () {
-//        
-//        let subwayFilePath = NSBundle.mainBundle().URLForResource("subway-lister", withExtension: "json")!
-//        let subWayText = try! String(contentsOfURL: subwayFilePath, encoding: NSUTF8StringEncoding)
-//        print(subWayText)
-//        let data = subWayText.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-//        var subwayArrayList = [SubwayLine]()
-//        do {
-//            let anyObj = try NSJSONSerialization.JSONObjectWithData(data, options: []) as! [String:AnyObject]
-//            print (anyObj["lines"]?.count)
-//            
-//            if let subwayList = anyObj["lines"] {
-//                for i in 0..<subwayList.count{
-//                    print(subwayList[i])
-//                    
-//                    let line = subwayList[i] as! [String : String]
-//                    //let desc = line["desc"]
-//                    //print (desc)
-//                    let eachLine = SubwayLine(desc: line["desc"] , hexcolor: line["hexcolor"], letter: line["letter"], name: line["name"])
-//                    subwayArrayList.append(eachLine)
-//                }
-//            }
-//            
-//        } catch {
-//            print("json error: \(error)")
-//        }
-//    }
-
 }

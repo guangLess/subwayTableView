@@ -14,7 +14,8 @@ I took a bit of time to find an icon set of the MTA subway icons. Designed by Ma
 ThingsToFix/add:
 -The data is locally stored, I am not sure of a better way to pass it to the view.
 -If the data is bigger, a threading method should be applied. 
--It would be cool to add a train animation on the loading screen. 
+-It would be cool to add a train animation on the loading screen.
+-DetailViewController class is not used yet, would be nice to have a map there. 
 -When viewing the project in the Simulator, the TableView separator between each cell flickers due to a resolution rendering bug. However, it renders fine when viewed on a device.
 
 Thanks for the opportunity! 

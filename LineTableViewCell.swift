@@ -9,11 +9,7 @@
 import UIKit
 
 internal final class LineTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var iconLabel: UIImageView!
-    
-
-    
 }

@@ -8,7 +8,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Subway/Metro Infomation-->
+        <!--MTA Information-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SubwayViewController" customModule="SubwayList_YH" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="222" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RSa-Zw-NUR" userLabel="SubwayTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -109,7 +109,7 @@
                             <constraint firstItem="RSa-Zw-NUR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="elu-ZW-Lee"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Subway/Metro Infomation" id="hFZ-vv-xcf"/>
+                    <navigationItem key="navigationItem" title="MTA Information" id="hFZ-vv-xcf"/>
                     <connections>
                         <outlet property="subwayTableView" destination="RSa-Zw-NUR" id="PpR-O9-72Y"/>
                     </connections>
@@ -164,6 +164,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T37-sl-1Gf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

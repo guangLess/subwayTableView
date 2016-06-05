@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import QuartzCore
+
 
 internal final class SubwayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -47,8 +49,12 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
         //TODO: "cell" needs to be in a pravit strac 
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! LineTableViewCell
         let eachLine = subwayDataStore.subwayArrayList[indexPath.row]
+        //FIXME: not a cricle
         cell.iconLabel.text = eachLine.letter
-        cell.iconLabel.backgroundColor = UIColor.blueColor()
+        cell.iconLabel.layer.cornerRadius = cell.iconLabel.frame.height/2
+        cell.clipsToBounds = true
+        //FIXME: pod to convert hex color
+        cell.iconLabel.layer.backgroundColor = UIColor.blueColor().CGColor
         cell.nameLabel.text = eachLine.name
         cell.descLabel.text = eachLine.desc
         return cell

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -30,7 +31,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOQ-Q3-wl3">
-                                                    <rect key="frame" x="0.0" y="8" width="186" height="205.5"/>
+                                                    <rect key="frame" x="0.0" y="51" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="jOQ-Q3-wl3" secondAttribute="height" multiplier="1:1" id="TeK-iA-m4o"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,19 +54,29 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="oRH-CF-dTr" firstAttribute="top" secondItem="JqT-yU-1j1" secondAttribute="bottom" constant="8" id="3aQ-Xf-RH9"/>
+                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="centerY" secondItem="pW3-df-3cg" secondAttribute="centerY" id="3zT-he-UXL"/>
                                                 <constraint firstAttribute="bottom" secondItem="oRH-CF-dTr" secondAttribute="bottom" constant="7.5" id="9CG-dq-nHq"/>
-                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="top" secondItem="pW3-df-3cg" secondAttribute="top" constant="8" id="9di-SN-eI5"/>
-                                                <constraint firstAttribute="bottom" secondItem="jOQ-Q3-wl3" secondAttribute="bottom" constant="8" id="AWa-C6-0Pa"/>
                                                 <constraint firstAttribute="trailing" secondItem="JqT-yU-1j1" secondAttribute="trailing" constant="8" id="An2-8Q-3Zo"/>
-                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="leading" secondItem="pW3-df-3cg" secondAttribute="leading" id="CEx-H0-2My"/>
+                                                <constraint firstAttribute="bottom" secondItem="jOQ-Q3-wl3" secondAttribute="bottom" constant="8" id="DUg-gx-SzP"/>
+                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="leading" secondItem="pW3-df-3cg" secondAttribute="leading" id="P3j-ag-ZSz"/>
+                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="leading" secondItem="pW3-df-3cg" secondAttribute="leading" id="TgG-pc-pPY"/>
                                                 <constraint firstAttribute="trailing" secondItem="oRH-CF-dTr" secondAttribute="trailing" constant="8" id="W3S-UT-sDy"/>
-                                                <constraint firstItem="JqT-yU-1j1" firstAttribute="leading" secondItem="jOQ-Q3-wl3" secondAttribute="trailing" constant="8" id="feH-fK-9Ur"/>
+                                                <constraint firstItem="JqT-yU-1j1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jOQ-Q3-wl3" secondAttribute="trailing" constant="8" id="feH-fK-9Ur"/>
+                                                <constraint firstItem="jOQ-Q3-wl3" firstAttribute="top" secondItem="pW3-df-3cg" secondAttribute="top" constant="8" id="h0F-fD-cTk"/>
                                                 <constraint firstItem="oRH-CF-dTr" firstAttribute="leading" secondItem="jOQ-Q3-wl3" secondAttribute="trailing" constant="8" id="omd-jM-Avd"/>
                                                 <constraint firstItem="JqT-yU-1j1" firstAttribute="top" secondItem="pW3-df-3cg" secondAttribute="top" constant="8" id="wAl-LA-V4q"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="DUg-gx-SzP"/>
+                                                    <exclude reference="P3j-ag-ZSz"/>
+                                                    <exclude reference="h0F-fD-cTk"/>
+                                                    <exclude reference="omd-jM-Avd"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="jOQ-Q3-wl3" firstAttribute="width" secondItem="h4E-J1-MJt" secondAttribute="width" multiplier="0.31" id="SrH-Do-sbM"/>
+                                            <constraint firstItem="jOQ-Q3-wl3" firstAttribute="width" secondItem="h4E-J1-MJt" secondAttribute="width" multiplier="0.2" id="SrH-Do-sbM"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="descLabel" destination="oRH-CF-dTr" id="tgb-el-dz7"/>

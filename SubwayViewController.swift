@@ -8,7 +8,7 @@
 
 import UIKit
 import QuartzCore
-
+import UIColor_Hex_Swift
 
 internal final class SubwayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -49,10 +49,15 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
         let eachLine = subwayDataStore.subwayArrayList[indexPath.row]
         //FIXME: not a cricle
         cell.iconLabel.text = eachLine.letter
-        cell.iconLabel.layer.cornerRadius = cell.iconLabel.frame.height/2
-        cell.clipsToBounds = true
+        let hexColorStr = String(format:"#%@",eachLine.hexcolor!)
+        
+        cell.iconLabel.backgroundColor = UIColor(rgba:hexColorStr)
+        //var strokeColor = UIColor(rgba: "#ffcc00").CGColor
+        //cell.iconLabel.layer.cornerRadius = cell.iconLabel.frame.height/2
+        //cell.clipsToBounds = true
         //FIXME: pod to convert hex color
-        cell.iconLabel.layer.backgroundColor = UIColor.blueColor().CGColor
+        //cell.iconLabel.layer.backgroundColor = UIColor.blueColor().CGColor
+        
         cell.nameLabel.text = eachLine.name
         cell.nameLabel.sizeToFit()
         cell.descLabel.text = eachLine.desc

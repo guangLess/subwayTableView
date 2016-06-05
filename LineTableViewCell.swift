@@ -8,10 +8,12 @@
 
 import UIKit
 
-class LineTableViewCell: UITableViewCell {
+internal final class LineTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var iconLabel: UIImageView!
+    
+
     
 }

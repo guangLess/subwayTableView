@@ -8,8 +8,8 @@
 
 import Foundation
 
-class SubwayData {
-    
+internal final class SubwayData {
+
     static let sharedInstance = SubwayData()
     var subwayArrayList = [SubwayLine]()
     let subwayFilePath = NSBundle.mainBundle().URLForResource("subway-lister", withExtension: "json")!
@@ -35,7 +35,6 @@ class SubwayData {
                     subwayArrayList.append(eachLine)
                 }
             }
-            
         } catch {
             print("json error: \(error)")
             return [SubwayLine]()

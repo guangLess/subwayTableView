@@ -11,8 +11,22 @@ import XCTest
 
 class SubwayList_YHTests: XCTestCase {
     
+    var viewCTest = SubwayViewController()
+    
+    
+    
     override func setUp() {
         super.setUp()
+        
+        
+        //TODO: what is .dynamicType do?
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+        //viewCTest = storyboard.instantiateViewControllerWithIdentifier("subwayVC") as! SubwayViewController
+        viewCTest.loadView()
+        viewCTest.viewDidLoad()
+        
+         
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -32,5 +46,23 @@ class SubwayList_YHTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+ 
     
+    /*
+    func testThisShouldPass() {
+        let sum = 2 + 2
+        
+        XCTAssert(sum == 4, "THe Sum is wrong")
+        
+    }
+    
+    func testThisWillFail() {
+        let testTable = SubwayViewController()
+        let tableViveTest = testTable.subwayTableView
+        let testData = tableViveTest.
+        
+        XCTAssert(tableViveTest !== nil, "Get the tableView")
+    }
+    
+  */
 }

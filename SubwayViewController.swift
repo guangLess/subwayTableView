@@ -19,6 +19,7 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         //TODO: findout which one is a better way to pass those data.
+        //FIXME:reload data when pulling the tableview
         subwayDataStore.populateArrayWithSubLines()
         
         subwayTableView.dataSource = self

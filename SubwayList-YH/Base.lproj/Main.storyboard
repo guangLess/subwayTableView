@@ -75,8 +75,8 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="r2P-Jt-DRO"/>
-                                                    <exclude reference="NRX-Lw-Hj2"/>
                                                     <exclude reference="7YM-FD-E7w"/>
+                                                    <exclude reference="NRX-Lw-Hj2"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

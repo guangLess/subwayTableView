@@ -1,4 +1,3 @@
-Hi, Dave, Hannah and Natasha
 
 Here is my project. I finished the skeleton within 3 hours, and I spent a bit more time on the UI layout after. 
 
@@ -12,13 +11,7 @@ SomeNotes:
 I took a bit of time to find an icon set of the MTA subway icons. Designed by Massimo Vignelli, they are very uniquely New York and make it quick to find your train when glancing at the list.
 
 ThingsToFix/add:
+-Better way to unwrap optionals.
 -The data is locally stored, I am not sure of a better way to pass it to the view.
 -If the data is bigger, a threading method should be applied. 
--It would be cool to add a train animation on the loading screen.
--DetailViewController class is not used yet, would be nice to have a map there. 
--When viewing the project in the Simulator, the TableView separator between each cell flickers due to a resolution rendering bug. However, it renders fine when viewed on a device.
-
-Thanks for the opportunity! 
-Look forward to hearing back from you.
-
-Guang
+-pull to refresh.

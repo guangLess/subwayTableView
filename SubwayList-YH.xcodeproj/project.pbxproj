@@ -102,8 +102,8 @@
 			children = (
 				62980A9A1D037F3E009DD16B /* subway-lister.json */,
 				62980A6C1D037C72009DD16B /* Main.storyboard */,
-				62980A961D037CD6009DD16B /* SubwayData.swift */,
 				62980A9C1D038B0D009DD16B /* SubwayLine.swift */,
+				62980A961D037CD6009DD16B /* SubwayData.swift */,
 				62980A981D037E05009DD16B /* SubwayViewController.swift */,
 				62980A9E1D039841009DD16B /* LineTableViewCell.swift */,
 				62980AA01D03BC73009DD16B /* DetailViewController.swift */,

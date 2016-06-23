@@ -47,9 +47,21 @@ internal final class SubwayViewController: UIViewController, UITableViewDelegate
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! LineTableViewCell
         let eachLine = subwayDataStore.subwayArrayList[indexPath.row]
-        if let iconName = eachLine.letter {
-        cell.iconLabel.image = UIImage(named:iconName.lowercaseString)
+//        if let iconName = eachLine.letter {
+//        cell.iconLabel.image = UIImage(named:iconName.lowercaseString)
+//        }
+        
+//        let imageName = eachLine.letter.map {_ in 
+//             eachLine.letter!.lowercaseString
+//            }
+//        cell.iconLabel.image = UIImage(named:imageName!)
+        
+        let image = eachLine.letter.map {
+            UIImage(named: $0)
         }
+        cell.iconLabel.image = image!
+        
+        
         cell.nameLabel.text = eachLine.name
         cell.descLabel.text = eachLine.desc
         return cell
